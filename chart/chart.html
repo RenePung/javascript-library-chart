@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div id="chart">
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+      const ctx = document.getElementById('myChart').getContext("2d");
+      var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0.4, 'rgba(10, 86, 255, 0.7)');
+      gradient.addColorStop(1, 'rgba(10, 86, 255, 0.1)');
+    
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['HTML/CSS', 'JavaScript', 'Python', 'BootStrap', 'jQuery', 'Node.js', 'React.js', 'SQL', 'Mongoose', 'MongoDB'],
+          datasets: [{
+            label: '# approximate hours spent on language',
+            data: [634, 335, 15, 5, 2, 3, 10, 23, 14, 41],
+            borderWidth: 1,
+            backgroundColor: gradient,
+            borderColor: 'red',
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                color: 'white' // Change font color for y-axis labels
+              }
+            },
+            x: {
+              ticks: {
+                color: 'white' // Change font color for x-axis labels
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              labels: {
+                color: 'white' // Change font color for legend
+              }
+            }
+          }
+        }
+      });
+    </script>
+    </div>
+    
+     
+	<script src="index.js"></script>
+  </body>
+</html>
