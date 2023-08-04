@@ -2,11 +2,11 @@
     position: relative;
     align-items: center;
     padding-top: 10rem;
-    height: 40vh;
-    padding-right: 3rem;
+    height: 35vh;
+    padding-right: 1rem;
 }
 
 #myChart {
-    padding-right: 2rem;
+    padding-right: 1rem;
     padding-left: 1rem;
 }
