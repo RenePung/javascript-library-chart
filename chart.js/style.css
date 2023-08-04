@@ -1,0 +1,11 @@
+.chart-container {
+    position: relative;
+    align-items: center;
+    padding-top: 10rem;
+    height: 40vh;
+}
+
+#myChart {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
