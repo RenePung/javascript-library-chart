@@ -3,9 +3,10 @@
     align-items: center;
     padding-top: 10rem;
     height: 40vh;
+    padding-right: 3rem;
 }
 
 #myChart {
     padding-right: 2rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
