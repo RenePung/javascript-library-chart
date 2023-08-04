@@ -31,7 +31,7 @@
           labels: ['HTML/CSS', 'JavaScript', 'Python', 'BootStrap', 'SQL', 'jQuery'],
           datasets: [{
             label: '# of Hours',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [700, 400, 30, 15, 20, 30],
             borderWidth: 3,
             borderRadius: 5,
             backgroundColor: 'rgba(0, 68, 198, 0.76)',
@@ -42,7 +42,15 @@
           responsive: true,
           maintainAspectRatio: false,
           scales: {
+            x: {
+              ticks: {
+                color: 'black'
+              }
+            },
             y: {
+              ticks: {
+                color: 'rgba(0, 68, 198, 1)'
+              },
               beginAtZero: true
             }
           },
