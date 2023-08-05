@@ -1,15 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF ;
+    --color2: #000000 ;
+}
+
 .chart-container {
     position: relative;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: 35vh;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 48vh;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     border: 2px solid rgba(0, 68, 198, 1);
 }
 
 #myChart {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
