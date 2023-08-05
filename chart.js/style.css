@@ -8,7 +8,7 @@ body {
     --color1: #FFF ;
     --color2: #000000 ;
 }
-
+/*CHART -----------------------------------------------------------------------*/
 .chart-container {
     position: relative;
     align-items: center;
